@@ -5,7 +5,7 @@ This repository provides two implementations: one for simulation and one for exp
 
 ---
 
-## 🧠 Main Scripts
+## Main Scripts
 
 ### `Main_TAPBD_SimHighSignal.m` (Simulation)
 - Designed for high-photon, simulation-based testing  
@@ -25,6 +25,6 @@ This repository provides two implementations: one for simulation and one for exp
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 Required `.mat` files are already available in the `/DataSet/` folder and are loaded automatically by each script:
