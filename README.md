@@ -19,8 +19,10 @@ This repository provides two implementations: one for simulation and one for exp
 - Applies Anscombe + wavelet-based **Poisson denoising**  
 - Uses angular spectrum propagation model  
 - Incorporates optical system parameters (focal length, wavelength, etc.)  
-- Recovers both object and turbulence phase  
+- Recovers both object and turbulence phase
 
+**Note**: Both scripts are designed to be run section-by-section (not as a single run).  
+> This allows users to inspect intermediate results (e.g., target, PSF, turbulence) and better understand the reconstruction process.
 ---
 
 ## Dataset
