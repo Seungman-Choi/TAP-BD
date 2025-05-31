@@ -22,7 +22,7 @@ This repository provides two implementations: one for simulation and one for exp
 - Recovers both object and turbulence phase
 
 **Note**: Both scripts are designed to be run section-by-section (not as a single run).  
-> This allows users to inspect intermediate results (e.g., target, PSF, turbulence) and better understand the reconstruction process.
+> Each script is structured into modular sections, allowing the user to run and inspect results step-by-step.
 ---
 
 ## Dataset
