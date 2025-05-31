@@ -1,6 +1,6 @@
 # TAP-BD: Turbulence-Aware Poisson Blind Deconvolution
 
-TAP-BD is a framework for robust image reconstruction under strong atmospheric turbulence and extremely low-photon conditions.  
+## TAP-BD is a framework for robust image reconstruction under strong atmospheric turbulence and extremely low-photon conditions.  
 This repository provides two implementations: one for simulation and one for experimental data.
 ---
 
