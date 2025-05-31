@@ -22,6 +22,6 @@ This repository provides two implementations: one for simulation and one for exp
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 Required `.mat` files are already available in the `/DataSet/` folder and will be loaded automatically by each script.
