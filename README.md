@@ -14,8 +14,6 @@ This repository provides two implementations: one for simulation and one for exp
 - **Poisson denoiser not used**  
 - Outputs reconstructions across different numbers of SLM patterns  
 
----
-
 ### `Main_TAPBD_ExpLowSignal.m` (Experiment)
 - Designed for real, low-photon experimental data  
 - Applies Anscombe + wavelet-based **Poisson denoising**  
