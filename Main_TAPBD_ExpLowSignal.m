@@ -1,4 +1,4 @@
-%% Fig4_TABD_Experiment_LowPhotonsCase
+%% TAPBD_Experiment_LowPhotonsCase
 
 load(strcat(pwd, '\DataSet\', 'PurdueTrain_ExpData.mat'));
 GPU_usage = true;
