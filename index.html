@@ -59,29 +59,44 @@
   <div class="section">
     <h2>📄 Abstract</h2>
     <p style="text-align: justify; line-height: 1.2; font-size: 1.1em;">
-      Imaging distant objects through Earth’s atmosphere is especially difficult when the air is turbulent and only a few photons reach the sensor. Traditional correction methods often break down in these cases because they can’t handle strong distortions or extreme low light.
-We introduce TAP-BD, a new method designed for such harsh conditions. It uses random phase patterns to encode more information from each image and applies a customized Poisson denoiser to remove noise caused by low photon counts. Then, using an iterative optimization algorithm (Alternating direction method of multipliers; ADMM), TAP-BD simultaneously recovers both the object and the distortion caused by turbulence.
-Even when the turbulence is severe, TAP-BD reconstructs clear images with strong accuracy—demonstrating its power for photon-starved imaging in astronomy and beyond.
+      Telescopic imaging through Earth’s turbulent atmosphere becomes especially challenging under extreme low-light conditions, where only a few photons reach the detector. Traditional correction methods often fail in these regimes, collapsing under strong distortions and photon scarcity.
+We present TAP-BD—a turbulence-aware Poisson blind deconvolution framework—engineered specifically for these harsh scenarios. By encoding wavefront diversity using random phase patterns and leveraging a customized Poisson denoiser, TAP-BD extracts maximal information from limited photons. An iterative ADMM-based optimization then jointly reconstructs both the underlying scene and the turbulence-induced aberrations.
+Even in the presence of severe turbulence, TAP-BD delivers sharp, accurate reconstructions—pushing the frontier of photon-efficient imaging for astronomy, surveillance, and beyond.
     </p>
   <div style="text-align: center; margin-bottom: 1em;">
-    <img src="Image/TAPBD_AlgorithmFigure.png" alt="TAP-BD Algorithm" style="max-width: 60%; height: auto;">
-    <p style="font-size: 0.9em; color: #555;">Figure: TAP-BD reconstruction pipeline</p>
+    <img src="Image/TAPBD_AlgorithmFigure.png" alt="TAP-BD Algorithm" style="max-width: 75%; height: auto;">
+    <p style="font-size: 1.2em; color: #555;">Figure: TAP-BD reconstruction pipeline</p>
   </div>
   </div>
 
 
 <div class="section">
   <h2>🎥 Gallery</h2>
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <video autoplay loop muted playsinline width="400">
-      <source src="/Image/video1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    
+    <!-- Video -->
+    <div style="text-align: center;">
+      <p style="text-align: center, line-height: 1.2; font-size: 1.2em;">
+      <strong>[Case Study 1]</strong> <strong>Telescopic imaging under severe atmospheric turbulence</strong>
+      </p>
+      <video autoplay loop muted playsinline width="900">
+        <source src="Image/TAPBD_ReconsVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="font-size: 1.2em; color: #555;">
+        Video: TAP-BD iterative update for severe turbulence (Turbulence strength D/r0 = 45, M = 100)
+      </p>
+    </div>
 
-    <video autoplay loop muted playsinline width="400">
-      <source src="/Image/video2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <!-- Image (stacked below the video) -->
+    <p style="text-align: center; line-height: 1.2; font-size: 1.2em;">
+      <strong>[Case Study 2]</strong> <strong>Microscopic imaging</strong>
+      </p>
+    <div style="text-align: center;">
+      <img src="Image/TAPBD_ImageRecons.png" alt="Reconstruction example" style="max-width: 750px; height: auto;">
+      <p style="font-size: 1.2em; color: #555;">Figure: TAP-BD experimental reconstruction (M=24)</p>
+    </div>
+
   </div>
 </div>
 
